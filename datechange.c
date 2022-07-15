@@ -2,13 +2,10 @@
 
 int main(void) {
   int month, day, year;
-
-  // Standard date form
   printf("Enter date (mm/dd/yyyy): ");
-  // Split the user input into 3 variables for the date
   scanf("%d /%d /%d", &month, &day, &year);
 
-  // Print the month
+
   switch(month) {
     case 1:
       printf("January");
@@ -48,10 +45,8 @@ int main(void) {
       break;
   }
 
-  // Print the day
   printf(" %d", day);
-
-  // Print the suffix for a given day
+    
   switch(day) {
     case 1: case 21: case 31:
       printf("st");
@@ -66,7 +61,7 @@ int main(void) {
       printf("th");
   }
 
-  // Print the year
+
   printf(", %d.\n", year);
 
   return 0;
